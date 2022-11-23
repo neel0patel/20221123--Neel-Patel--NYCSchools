@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schools</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h2>NYC School Search</h2>
+    </header>
+    <br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-8 zipcode-entry">
+
+                <h2>Find your facts and stay civically engaged!</h2>
+
+                <h3>Type your zip code to find stats on schools in your area!</h3>
+                <br>
+                <div class="boxes-forms">
+                    <form class="create-form">
+
+                        <div class="zipcode-input">
+                            <label for="zipcode"> Zipcode: </label>
+                            <input type="text" id="zipcode" name="Zipcode">
+                        </div>
+                </div>
+                <br>
+                <div class="submit-button">
+                    <button id="submit" class="school-button">
+                        Find my schools!
+                    </button>
+                    <br>
+                </div>
+                </form>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="d-flex">
+            <div class="col-8">
+
+                <div id="map"></div>
+            </div>
+            <br>
+            <div class="col-4">
+                <div class="overflow-auto card-background">
+                    <div class="school-report-cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="Alderman">
+                <div class="alderman-info">
+                </div>
+                <div class="alderman-form">
+                    <p>Sign this petition if you'd like your ward to host a town hall about education!</p>
+                    <form class="petition-form">
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="signFirstName" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="signLastName" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" id="signEmail" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="ward">Ward:</label>
+                            <input type="text" id="signWard" name="name">
+                        </div>
+                        <div class="form-group">
+                            <div class="submit-button">
+                                <button id="sign" class="petition-button">
+                                    Sign the petition!
+                                </button>
+                            </div>
+                    </form>
+                    <br>
+                    <div class="text-danger font-weight-bold" id="petition-error"></div>
+                    <div id="numSignatures">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/schools.js"></script>
+    <script src="/js/petitions.js"></script>
+</body>
+
+<!-- This script tag loads the Google Map. You'll see our API key. Google Maps is primarily a front end service at this time. 
+    We protect our API key by limiting the URLs it can work with to just our own via Google's Cloud Platform settings. -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkDvyCRJuVcGGxelF0MhwkiSMYzVZ7TaY&callback=initMap"></script>
+</html>
