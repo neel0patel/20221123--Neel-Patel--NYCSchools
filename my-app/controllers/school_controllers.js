@@ -15,7 +15,7 @@ router.get("/api/:zip", function (req, res) {
     where: {
       zipcode: req.params.zip,
     },
-    // linking to the alderman db to display alderman contact information -
+    // linking to the db to display contact information -
     include: [db.Alderman],
   }).then(function (schools) {
     hbsObject = { schools: schools };

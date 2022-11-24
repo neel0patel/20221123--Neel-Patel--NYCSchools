@@ -22,6 +22,5 @@ db.sequelize.sync().then(function () {
     console.log("Server listening on: http://localhost:3000");
   });
 });
-
-// keeping the below commented for now so as not to force anything :
-//db.sequelize.sync({ force: true }).then(function() {
+// server side still needs more work done but I wasn't able to solve that issue yet.
+//future expectation of this would be to have a server side independently working and providing the info we need on the schools

@@ -1,4 +1,4 @@
-// model containing the data for each of the 50 wards in Chicago
+// model containing the data for schools in NY
 module.exports = function (sequelize, DataTypes) {
   var Alderman = sequelize.define("Alderman", {
     ward_id: {
