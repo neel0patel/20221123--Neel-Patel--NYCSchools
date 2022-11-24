@@ -4,6 +4,8 @@
 <head>
     <title>Schools</title>
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
@@ -85,10 +87,10 @@
         </div>
         <br>
         <div class="row">
-            <div class="Alderman">
+            <!-- <div class="Alderman"> -->
                 <div class="alderman-info">
                 </div>
-                <div class="alderman-form">
+                <!-- <div class="alderman-form">
                     <p>Sign this petition if you'd like your ward to host a town hall about education!</p>
                     <form class="petition-form">
                         <div class="form-group">
@@ -112,25 +114,30 @@
                                 <button id="sign" class="petition-button">
                                     Sign the petition!
                                 </button>
-                            </div>
+                            </div> -->
                     </form>
                     <br>
                     <div class="text-danger font-weight-bold" id="petition-error"></div>
                     <div id="numSignatures">
                         <p></p>
                     </div>
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <script async = "false"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7kLnhhbHAs5HdRfwqzMH8qdYSxOtJLps&callback=initMap&v=weekly"
+      defer
+    ></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="/js/map.js"></script>
     <script src="/js/schools.js"></script>
-    <script src="/js/petitions.js"></script>
+    <!-- <script src="/js/petitions.js"></script> -->
 </body>
 
 <!-- This script tag loads the Google Map. You'll see our API key. Google Maps is primarily a front end service at this time. 
     We protect our API key by limiting the URLs it can work with to just our own via Google's Cloud Platform settings. -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkDvyCRJuVcGGxelF0MhwkiSMYzVZ7TaY&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7kLnhhbHAs5HdRfwqzMH8qdYSxOtJLps&callback=initMap"></script>
 </html>

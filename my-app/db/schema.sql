@@ -1,0 +1,2 @@
+CREATE DATABASE NYC_schools;
+USE NYC_schools;
